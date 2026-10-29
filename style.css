@@ -1,0 +1,75 @@
+.prioridade-alta {
+    background-color: #dc3545;
+    animation: chamarAtencao 1s ease-in-out infinite;
+}
+
+.prioridade-media {
+    color: #212529;
+    background-color: #ffc107;
+}
+
+.prioridade-baixa {
+    background-color: #198754;
+}
+
+.prioridade-outra {
+    background-color: #6c757d;
+}
+
+.btn {
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-secondary {
+    color: #fff;
+}
+
+.btn-outline-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-success {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+
+.btn-outline-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgb(33 37 41 / 18%);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+@keyframes chamarAtencao {
+    50% {
+        opacity: 0.35;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .prioridade-alta {
+        animation: none;
+    }
+
+    .btn {
+        transition: none;
+    }
+
+    .btn:hover,
+    .btn:active {
+        transform: none;
+    }
+}

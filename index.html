@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Informa que o documento usa HTML5. -->
+
+<html lang="pt-BR">
+<!-- Elemento raiz. lang informa português do Brasil. -->
+
+<head>
+    <!-- Cabeçalho técnico da página. -->
+
+    <meta charset="UTF-8">
+    <!-- Permite acentos e caracteres Unicode. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Faz o layout respeitar a largura do dispositivo. -->
+
+    <title>HelpDesk Web - SPA</title>
+    <!-- Texto exibido na aba do navegador. -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <!-- Carrega o CSS do Bootstrap por CDN. -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Estilos próprios da aplicação. -->
+</head>
+
+<body>
+    <!-- Conteúdo visual da aplicação. -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <!-- Barra de navegação Bootstrap. -->
+
+        <div class="container">
+            <!-- Centraliza o conteúdo. -->
+
+            <a class="navbar-brand" href="#" data-view="dashboard">
+                HelpDesk Web
+            </a>
+            <!-- data-view será lido pelo JavaScript. -->
+
+            <div class="navbar-nav">
+                <!-- Grupo de links. -->
+
+                <a class="nav-link" href="#" data-view="dashboard">
+                    Dashboard
+                </a>
+
+                <a class="nav-link" href="#" data-view="chamados">
+                    Chamados
+                </a>
+
+                <a class="nav-link" href="#" data-view="novo">
+                    Novo chamado
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <!-- Conteúdo principal. -->
+
+        <div id="app"></div>
+        <!-- JavaScript preencherá esta área dinamicamente. -->
+    </main>
+
+    <script src="app.js"></script>
+    <!-- Carrega a lógica da SPA. -->
+</body>
+</html>
